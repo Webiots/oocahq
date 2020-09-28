@@ -1,0 +1,167 @@
+/* common css */
+
+// font family
+@font-face {
+    font-family: "GothamRoundBold";
+    src: url("../fonts/GothamRoundedBold_21016.woff") format('woff');
+  }
+  
+  @font-face {
+    font-family: "GothamRoundBook";
+    src: url("../fonts/GothamRoundedBook_21018.woff") format('woff');
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: "GothamRoundLight";
+    src: url("../fonts/GothamRoundedLight_21020.woff") format('woff');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: "GothamRoundMedium";
+    src: url("../fonts/GothamRoundedMedium_21022.woff") format('woff');
+    font-style: italic;
+  }
+  
+  // general css
+  body {
+    font-family: GothamRoundLight;
+    position: relative;
+    background: $white;
+    color: $black;
+    font-size: 14px;
+  }
+  
+  ul {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+  li {
+    display: inline-block;
+    font-size: 14px;
+  }
+  p {
+    font-family: "GothamRoundBook";
+    font-size: 16px;
+    line-height: 24px;
+    &.font-roboto {
+      letter-spacing: 0.4px;
+    }
+    &.caption {
+      line-height: 22px;
+    }
+  }
+  a {
+    transition: 0.5s ease;
+    color: $marigo-color;
+    &:hover {
+      text-decoration: none;
+      transition: 0.5s ease;
+      color: $marigo-color;
+    }
+    &:focus {
+      outline: none;
+      color: $marigo-color;
+    }
+  }
+  button,
+  .btn {
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  
+  .form-control {
+    font-size: 14px;
+    line-height: 24px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  
+    h1 {
+      font-family: "GothamRoundBold";
+      font-size: calc(26px + (50 - 26) * ((100vw - 320px) / (1920 - 320)));
+      letter-spacing: 0.03em;
+      line-height: calc(32px + (56 - 32) * ((100vw - 320px) / (1920 - 320)));
+      text-transform: capitalize;
+    }
+    h2 {
+      font-family: "GothamRoundMedium";
+      font-size: calc(22px + (28 - 22) * ((100vw - 320px) / (1920 - 320)));
+      font-weight: 100;
+      letter-spacing: 0.001em;
+      line-height: calc(32px + (40 - 32) * ((100vw - 320px) / (1920 - 320)));
+    }
+    h3 {
+      font-family: "GothamRoundMedium";
+      font-size: calc(18px + (20 - 18) * ((100vw - 320px) / (1920 - 320)));
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      line-height: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+    }
+    h4 {
+      font-family: "GothamRoundMedium";
+      font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      line-height: 16px;
+      text-transform: capitalize;
+    }
+    h5 {
+      font-family: "GothamRoundMedium";
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      line-height: 16px;
+    }
+    h6 {
+      font-family: "GothamRoundMedium";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+    span {
+      font-family: "GothamRoundBook";
+    }
+    .caption, .tag, .invalid-feedback, .warning, .valid-feedback {
+      font-family: "GothamRoundBook";
+      font-size: 12px;
+      line-height: 16px;
+    }
+    small {
+      font-family: "GothamRoundBook";
+      font-size: 10px;
+      line-height: 12px;
+      &.caption {
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+    
+    .common-header {
+      margin-bottom: calc(32px + (64 - 32) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    .common-space {
+      padding: calc(40px + (80 - 40) * ((100vw - 320px) / (1920 - 320))) 0;
+    }
+
+    .label-dark {
+      padding: 6px 20px;
+      background-color: $label-bg;
+      display: inline-block;
+      box-shadow: 5px 5px 13px 5px rgba($black, 0.11);
+      color: $white;
+      border-radius: 8px;
+      margin-bottom: 32px;
+      min-width: 165px;
+      font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+    }
+    .bg-black {
+      background-color: $default-black;
+    }
+    

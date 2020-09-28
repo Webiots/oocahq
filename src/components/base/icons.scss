@@ -1,0 +1,76 @@
+@import "../../assets/scss/variables.scss";
+
+.icons-list {
+  .icons-wrap {
+    margin-bottom: -32px;
+    .row {
+      > div {
+        flex: 0 0 20%;
+        max-width: 20%;
+      }
+    }
+    .text-center {
+      margin-bottom: 32px;
+    }
+    h6 {
+      margin-top: 8px;
+    }
+  }
+}
+.bold-icons {
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+.flag-icons {
+  margin-top: 48px;
+  .row {
+    > div {
+      .flag-box {
+        display: flex;
+        align-items: center;
+        img {
+          width: 16px;
+        }
+        h6 {
+          margin-left: 16px;
+        }
+        + .flag-box {
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}
+
+// responsive 
+@media screen and (max-width: 1199px) {
+  .icons-list {
+    .icons-wrap {
+      .row {
+        > div {
+          flex: 0 0 25%;
+          max-width: 25%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .bold-icons {
+    margin-top: 48px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .icons-list {
+    .icons-wrap {
+      .row {
+        > div {
+          flex: 0 0 33.33%;
+          max-width: 33.33%;
+        }
+      }
+    }
+  }
+}

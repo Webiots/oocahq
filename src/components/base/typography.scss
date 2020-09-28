@@ -1,0 +1,121 @@
+@import "../../assets/scss/variables.scss";
+
+.use-fonts {
+  &.bold {
+    h2,h3,h4,h5,h6 {
+      font-family: "GothamRoundBold";
+    }
+  }
+  &.medium {
+    h1,h2,h3,h4,h5,h6 {
+      font-family: "GothamRoundMedium";
+    }
+  }
+  &.light {
+    h1,h2,h3,h4,h5,h6 {
+      font-family: "GothamRoundBook";
+    }
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  h4 {
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.typography {
+  .use-fonts {
+    + .use-fonts {
+      margin-top: 32px;
+    }
+  }
+}
+.typography-title {
+  p {
+    margin-bottom: 0;
+  }
+  .use-fonts {
+    h2 {
+      margin-bottom: 0;
+    }
+    small {
+      display: block;
+      + small {
+        margin-top: 8px;
+      }
+      &:last-child {
+        margin-top:20px;
+      }
+    }
+    + .use-fonts {
+      margin-top: 32px;
+    }
+  }
+  .header-title {
+    color: $white;
+    h1 {
+      margin-bottom: 0;
+    }
+    h2, h3, h4, h5, p {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.thai-fonts {
+  h1 {
+    font-family: "GothamRoundMedium";
+    font-size: calc(24px + (41 - 24) * ((100vw - 320px) / (1920 - 320)));
+  }
+  h2 {
+    font-size: calc(22px + (24 - 22) * ((100vw - 320px) / (1920 - 320)));
+  }
+  h3 {
+    font-size: 17px;
+  }
+  h4 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  h5 {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .paragraph {
+    p {
+      font-family: GothamRoundLight;
+      font-size: 14px;
+    }
+  }
+  small {
+    &:last-child {
+      margin-top: 10px !important;
+    }
+  }
+}
+
+// responsive css
+@media (max-width: 767px) {
+  .typography {
+    .row {
+      > div {
+        + div {
+          margin-top: 40px;
+        }
+      }
+    }
+    .use-fonts {
+      + .use-fonts {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+@media (max-width: 575px) {
+  .thai-size {
+    margin-top: 40px;
+  }
+}

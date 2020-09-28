@@ -1,0 +1,216 @@
+/*color variables*/
+
+$white: #fff;
+$default-black: #000;
+$label-bg: #13263b;
+
+// main colors
+$primary-color: #0055bb;
+$primary-color2: #00c4b3;
+
+// accent colors
+$marigo-color: #e9a400;
+
+// semantic colors
+$flamingo-color: #ef7773;
+$sunshade-color: #ff8f4b;
+$guava-color: #8ad866;
+$blue-color: #4994ec;
+
+// grey colors
+$black: #2b2b2b;
+$gray-color1: #474c55;
+$gray-color2: #788597;
+$gray-color3: #cbd6e0;
+$gray-color4: #dfeaf3;
+$tag-bg: #F7FBFF;
+
+// border radius 
+$button-radius: 100px;
+$normal-radius: 8px;
+
+// forms settings
+$input-hover-text: #788697;
+$input-disabled-bg: #FDFDFE;
+$textarea-caption: #A6B3C3;
+
+// shadow
+$card-shadow: -4px 4px 8px rgba(242, 242, 242, 0.2),
+                4px -4px 8px rgba(242, 242, 242, 0.2),
+                -4px -4px 8px rgba($white, 0.9),
+                4px 4px 10px  rgba(242, 242, 242, 0.9),
+                inset 1px 1px 2px rgba($white, 0.3),
+                inset -1px -1px 2px rgba(242, 242, 242, 0.5);
+
+$select-shadow:  -3px 3px 6px rgba(225, 230, 236, 0.2), 
+                3px -3px 6px rgba(225, 230, 236, 0.2), 
+                -3px -3px 6px rgba(253, 255, 255, 0.9), 
+                3px 3px 8px rgba(225, 230, 236, 0.9), 
+                inset 1px 1px 2px rgba(253, 255, 255, 0.3), 
+                inset -1px -1px 2px rgba(225, 230, 236, 0.5);
+
+$select-default-shadow:  1px 1px 2px rgba(253, 255, 255, 0.3), 
+                        -1px -1px 2px rgba(225, 230, 236, 0.5), 
+                        inset -3px 3px 6px rgba(225, 230, 236, 0.2), 
+                        inset 3px -3px 6px rgba(225, 230, 236, 0.2), 
+                        inset -3px -3px 6px rgba(253, 255, 255, 0.9), 
+                        inset 3px 3px 8px rgba(225, 230, 236, 0.9);
+
+$select-date-shadow:3px 3px 6px rgba(225, 230, 236, 0.2), 
+                    3px -3px 6px rgba(225, 230, 236, 0.2), 
+                    -3px -3px 6px rgba(253, 255, 255, 0.9), 
+                    3px 3px 8px rgba(225, 230, 236, 0.9),
+                    inset 1px 1px 2px rgba(253, 255, 255, 0.3), 
+                    inset -1px -1px 2px rgba(225, 230, 236, 0.5);
+
+
+$input-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), 
+                -1px -1px 2px rgba(240, 240, 240, 0.5), 
+                inset -3px 3px 6px rgba(240, 240, 240, 0.2), 
+                inset 3px -3px 6px rgba(240, 240, 240, 0.2), 
+                inset -3px -3px 6px rgba(255, 255, 255, 0.9), 
+                inset 3px 3px 8px rgba(240, 240, 240, 0.9);
+
+$input-focus-shadow:inset -3px 3px 6px rgba(225, 230, 236, 0.2), 
+                    inset 3px -3px 6px rgba(225, 230, 236, 0.2), 
+                    inset -3px -3px 6px rgba(253, 255, 255, 0.9), 
+                    inset 3px 3px 8px rgba(225, 230, 236, 0.9);
+
+
+$input-focuswith-shadow: 1px 1px 2px rgba(253, 255, 255, 0.3), 
+                    -1px -1px 2px rgba(225, 230, 236, 0.5), 
+                    inset -3px 3px 6px rgba(225, 230, 236, 0.2), 
+                    inset 3px -3px 6px rgba(225, 230, 236, 0.2), 
+                    inset -3px -3px 6px rgba(253, 255, 255, 0.9), 
+                    inset 3px 3px 8px rgba(225, 230, 236, 0.9);
+
+$input-disabled-shadow:  1px 1px 2px rgba(253, 255, 255, 0.3),
+                        -1px -1px 2px rgba(225, 230, 236, 0.5), 
+                        inset -3px 3px 6px rgba(225, 230, 236, 0.2), 
+                        inset 3px -3px 6px rgba(225, 230, 236, 0.2), 
+                        inset -3px -3px 6px rgba(253, 255, 255, 0.9), 
+                        inset 3px 3px 8px rgba(225, 230, 236, 0.9);
+
+$input-error-shadow: 1px 1px 2px rgba(253, 255, 255, 0.3), 
+                    -1px -1px 2px rgba(225, 230, 236, 0.5), 
+                    inset -3px 3px 6px rgba(239, 119, 115, 0.2), 
+                    inset 3px -3px 6px rgba(239, 119, 115, 0.2), 
+                    inset -3px -3px 6px rgba(239, 119, 115, 0.3), 
+                    inset 3px 3px 8px rgba(239, 119, 115, 0.3);
+                   
+$input-warning-shadow:  1px 1px 2px rgba(253, 255, 255, 0.3), 
+                        -1px -1px 2px rgba(225, 230, 236, 0.5), 
+                        inset -3px 3px 6px rgba(255, 143, 75, 0.2), 
+                        inset 3px -3px 6px rgba(255, 143, 75, 0.2), 
+                        inset -3px -3px 6px rgba(255, 143, 75, 0.3), 
+                        inset 3px 3px 8px rgba(255, 143, 75, 0.3);
+
+$input-success-shadow:  1px 1px 2px rgba(253, 255, 255, 0.3), 
+                        -1px -1px 2px rgba(225, 230, 236, 0.5), 
+                        inset -3px 3px 6px rgba(138, 216, 102, 0.2), 
+                        inset 3px -3px 6px rgba(138, 216, 102, 0.2), 
+                        inset -3px -3px 6px rgba(138, 216, 102, 0.3), 
+                        inset 3px 3px 8px rgba(138, 216, 102, 0.3);
+
+$textarea-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), 
+                -1px -1px 2px rgba(240, 240, 240, 0.5), 
+                inset -3px 3px 6px rgba(240, 240, 240, 0.2), 
+                inset 3px -3px 6px rgba(240, 240, 240, 0.2), 
+                inset -3px -3px 6px rgba(255, 255, 255, 0.9), 
+                inset 3px 3px 8px rgba(240, 240, 240, 0.9);
+
+$textarea-focus-shadow: 1px 1px 2px rgba(253, 255, 255, 0.3), 
+-1px -1px 2px rgba(0, 86, 187, 0.2), 
+inset -3px 3px 6px rgba(0, 86, 187, 0.2), 
+inset 3px -3px 6px rgba(0, 86, 187, 0.2), 
+inset -3px -3px 6px rgba(253, 255, 255, 0.9), 
+inset 3px 3px 8px rgba(225, 230, 236, 0.9);
+
+$textarea-disabled-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3), 
+-1px -1px 2px rgba(240, 240, 240, 0.5), 
+inset -3px 3px 6px rgba(240, 240, 240, 0.2), 
+inset 3px -3px 6px rgba(240, 240, 240, 0.2), 
+inset -3px -3px 6px rgba(255, 255, 255, 0.9), 
+inset 3px 3px 8px rgba(240, 240, 240, 0.9);
+
+$select-btn-shadow:-2px 2px 4px rgba(230, 230, 230, 0.2), 
+2px -2px 4px rgba(230, 230, 230, 0.2), 
+-2px -2px 4px rgba(255, 255, 255, 0.9), 
+2px 2px 5px rgba(230, 230, 230, 0.9), 
+inset 1px 1px 2px rgba(255, 255, 255, 0.3), 
+inset -1px -1px 2px rgba(230, 230, 230, 0.5);
+
+$select-btnselect-shadow: -2px 2px 4px rgba(230, 230, 230, 0.2), 
+2px -2px 4px rgba(230, 230, 230, 0.2), 
+-2px -2px 4px rgba(255, 255, 255, 0.9), 
+2px 2px 5px rgba(230, 230, 230, 0.9), 
+inset 1px 1px 2px rgba(255, 255, 255, 0.3), 
+inset -1px -1px 2px rgba(230, 230, 230, 0.5);
+
+$select-btnhover-shadow: 1px 1px 2px rgba(253, 255, 255, 0.3), 
+-1px -1px 2px rgba(225, 230, 236, 0.5), 
+inset -3px 3px 6px rgba(225, 230, 236, 0.2), 
+inset 3px -3px 6px rgba(225, 230, 236, 0.2), 
+inset -3px -3px 6px rgba(253, 255, 255, 0.9), 
+inset 3px 3px 8px rgba(225, 230, 236, 0.9);
+
+ 
+$badge-shadow: -1px 1px 2px rgba(230, 230, 230, 0.2), 
+                1px -1px 2px rgba(230, 230, 230, 0.2), 
+                -1px -1px 2px rgba(255, 255, 255, 0.9), 
+                1px 1px 3px rgba(230, 230, 230, 0.9), 
+                inset 1px 1px 2px rgba(255, 255, 255, 0.3), 
+                inset -1px -1px 2px rgba(230, 230, 230, 0.5);
+ 
+// pagination shadow
+$pagination-shadow: -3px 3px 6px rgba(225, 230, 236, 0.2), 
+                    3px -3px 6px rgba(225, 230, 236, 0.2), 
+                    -3px -3px 6px rgba(253, 255, 255, 0.9), 
+                    3px 3px 8px rgba(225, 230, 236, 0.9), 
+                    inset 1px 1px 2px rgba(253, 255, 255, 0.3), 
+                    inset -1px -1px 2px rgba(225, 230, 236, 0.5);
+
+// dropdown shadow
+$dropdown-shadow: -3px 3px 6px rgba(225, 230, 236, 0.2), 
+                    3px -3px 6px rgba(225, 230, 236, 0.2), 
+                    -3px -3px 6px rgba(253, 255, 255, 0.9),
+                    3px 3px 8px rgba(225, 230, 236, 0.9), 
+                    inset 1px 1px 2px rgba(253, 255, 255, 0.3), 
+                    inset -1px -1px 2px rgba(225, 230, 236, 0.5);
+
+$checkbox-shadow :  -3px 3px 6px rgba(225, 230, 236, 0.2), 
+                    3px -3px 6px rgba(225, 230, 236, 0.2), 
+                    -3px -3px 6px rgba(253, 255, 255, 0.9), 
+                    3px 3px 8px rgba(225, 230, 236, 0.9), 
+                    inset 1px 1px 2px rgba(253, 255, 255, 0.3), 
+                    inset -1px -1px 2px rgba(225, 230, 236, 0.5);  
+
+ // card shadow
+$provideruser-shadow: -4px 4px 8px rgba(230, 230, 230, 0.2), 
+                    4px -4px 8px rgba(230, 230, 230, 0.2), 
+                    -4px -4px 8px rgba(255, 255, 255, 0.9), 
+                    4px 4px 10px rgba(230, 230, 230, 0.9), 
+                    inset 1px 1px 2px rgba(255, 255, 255, 0.3), 
+                    inset -1px -1px 2px rgba(230, 230, 230, 0.5); 
+                    
+$tag-shadow:  1px 1px 2px rgba(255, 255, 255, 0.3), 
+            -1px -1px 2px rgba(222, 226, 230, 0.5), 
+            inset -1px 1px 2px rgba(222, 226, 230, 0.2), 
+            inset 1px -1px 2px rgba(222, 226, 230, 0.2), 
+            inset -1px -1px 2px rgba(255, 255, 255, 0.9), 
+            inset 1px 1px 3px rgba(222, 226, 230, 0.9);
+            
+// status card shadow
+$status-active: 1px 1px 2px rgba(253, 255, 255, 0.3), 
+                -1px -1px 2px rgba(225, 230, 236, 0.5), 
+                inset -3px 3px 6px rgba(225, 230, 236, 0.2), 
+                inset 3px -3px 6px rgba(225, 230, 236, 0.2), 
+                inset -3px -3px 6px rgba(253, 255, 255, 0.9), 
+                inset 3px 3px 8px rgba(225, 230, 236, 0.9);
+
+$status-hover: -4px 4px 8px rgba($primary-color, 0.2), 
+                4px -4px 8px rgba($primary-color, 0.2), 
+                -4px -4px 8px rgba($white, 0.9), 
+                4px 4px 10px rgba($primary-color, 0.2), 
+                inset 1px 1px 2px rgba($white, 0.3), 
+                inset -1px -1px 2px rgba($primary-color, 0.3);

@@ -1,0 +1,20 @@
+@import "../../assets/scss/variables.scss";
+
+.details {
+  h1 {
+    margin-bottom: 32px;
+  }
+  h2 {
+    margin-bottom: 24px;
+  }
+}
+// responsive css
+@media (max-width: 991px) {
+  .spacing-content {
+    > div {
+      + div {
+        margin-top: 24px;
+      }
+    }
+  }
+}

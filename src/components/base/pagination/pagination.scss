@@ -1,0 +1,85 @@
+@import "../../../assets/scss/variables.scss";
+
+.pagination {
+  .page-item {
+    .page-link {
+      font-size: 16px;
+      line-height: 20px;
+      min-width: 38px;
+      text-align: center;
+      font-family: "GothamRoundMedium";
+      color: $primary-color;
+      .sr-only {
+        display: contents;
+        font-family: "GothamRoundMedium";
+      }
+    }
+    + .page-item {
+      margin-left: 8px;
+    }
+  }
+}
+.pagination-wrapper {
+  .row {
+    label {
+      margin-bottom: 0;
+      font-family: "GothamRoundMedium";
+    }
+  }
+}
+
+.pagination-dots {
+  .page-item {
+    .page-link {
+      background: rgba(27, 85, 164, 0.2);
+      box-shadow: inset 0px 4px 4px rgba(27, 85, 164, 0.2);
+      min-width: unset !important;
+      padding: 4px;
+      border-radius: 50px;
+    }
+    &.active {
+      .page-link {
+        background: $primary-color;
+        box-shadow: inset 0px 4px 4px rgba(27, 85, 164, 0.2);
+      }
+    }
+  }
+}
+
+// responsive
+@media (max-width: 991px) {
+  .pagination-wrapper {
+    .row {
+      label {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .pagination {
+    .page-item {
+      .page-link {
+        font-size: 14px;
+        min-width: 34px;
+        svg {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+        .sr-only {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .pagination {
+    flex-wrap: wrap;
+    margin-bottom: -8px;
+    .page-item {
+      margin-bottom: 8px;
+    }
+  }
+} 

@@ -1,0 +1,68 @@
+[
+	{
+		"type":"tints",
+		"data": [
+		  {
+		  	"title":"OOCA Blue",
+		  	"class":"primary-color"
+		  },
+		  {
+		  	"title":"OOCA Turquoise",
+		  	"class":"primary-color2"
+		  },
+		  {
+		  	"title":"OOCA Marigold",
+		  	"class":"marigo-color"
+		  },
+		  {
+		  	"title":"OOCA Guava",
+		  	"class":"guava-color"
+		  },
+		  {
+		  	"title":"OOCA Sunshade",
+		  	"class":"sunshade-color"
+		  },
+		  {
+		  	"title":"OOCA Flamingo",
+		  	"class":"flamingo-color"
+		  },
+		  {
+		  	"title":"OOCA Blue",
+		  	"class":"blue-color"
+		  }
+		]
+	},
+	{
+		"type":"shades",
+		"data": [
+		  {
+		  	"title":"OOCA Blue",
+		  	"class":"primary-color"
+		  },
+		  {
+		  	"title":"OOCA Turquoise",
+		  	"class":"primary-color2"
+		  },
+		  {
+		  	"title":"OOCA Marigold",
+		  	"class":"marigo-color"
+		  },
+		  {
+		  	"title":"OOCA Guava",
+		  	"class":"guava-color"
+		  },
+		  {
+		  	"title":"OOCA Sunshade",
+		  	"class":"sunshade-color"
+		  },
+		  {
+		  	"title":"OOCA Flamingo",
+		  	"class":"flamingo-color"
+		  },
+		  {
+		  	"title":"OOCA Blue",
+		  	"class":"blue-color"
+		  }
+		]
+	}
+]

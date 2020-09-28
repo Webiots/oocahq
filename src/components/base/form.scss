@@ -1,0 +1,589 @@
+@import "../../assets/scss/variables.scss";
+
+.form-control {
+  border-radius: 8px;
+  border-color: transparent;
+  padding: 8px 16px;
+  line-height: 24px;
+  height: auto;
+  &::placeholder {
+    line-height: 24px;
+    color: $gray-color3;
+  }
+}
+.form-group {
+  position: relative;
+  svg {
+    width: 16px;
+    position: absolute;
+    right: 16px;
+    bottom: 13px;
+    fill: $gray-color1;
+  }
+  label {
+    color: $gray-color1;
+    font-family: "GothamRoundMedium";
+    margin-bottom: 4px;
+  }
+  .caption {
+    color: $textarea-caption;
+    display: block;
+    padding-top: 8px;
+  }
+  textarea {
+    padding: 16px;
+  }
+  &.disabled, &:disabled {
+    label {
+      opacity: 0.5;
+    }
+  }
+  &.is-invalid {
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+    .invalid-feedback, label {
+      color: $flamingo-color;
+    }
+    .form-control {
+      background-image: url(../../assets/images/icons/4.png);
+      background-position: right 16px center;
+      background-size: 16px;
+      &.without-icon {
+        background-image: unset;
+      }
+    }
+    textarea {
+      &.form-control {
+        background-image: unset;
+      }
+    }
+  }
+  &.valid-warning {
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+    label, .warning {
+      color: $sunshade-color;
+    }
+    .form-control {
+      background-image: url(../../assets/images/icons/5.png);
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      background-size: 16px;
+      &.without-icon {
+        background-image: unset;
+      }
+    }
+    textarea {
+      &.form-control {
+        background-image: unset;
+      }
+    }
+  }
+  &.is-valid {
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+    label {
+      color: $guava-color;
+    }
+    .form-control {
+      background-image: url(../../assets/images/icons/6.png);
+      background-position: right 16px center;
+      background-size: 16px;
+      &.without-icon {
+        background-image: unset;
+      }
+    }
+    textarea {
+      &.form-control {
+        background-image: unset;
+      }
+    }
+  }
+  .is-invalid, .warning, .is-valid {
+    display: block;
+  }
+  .valid-feedback {
+    color: $guava-color;
+  }
+  .invalid-feedback, .valid-feedback, .warning {
+    margin-top: 6px;
+  }
+}
+.divider {
+  padding: 16px 0;
+  text-align: center;
+  line-height: 16px;
+}
+
+.default-form {
+  .form-box {
+    .row {
+      align-items: center;
+      .form-group {
+        margin-bottom: 0;
+      }
+      + .row {
+        margin-top: calc(32px + (64 - 32) * ((100vw - 320px) / (1920 - 320)));
+      }
+    }
+    + .form-box {
+      margin-top: calc(32px + (64 - 32) * ((100vw - 320px) / (1920 - 320)));
+    }
+  }
+}
+// dropdown
+.dropdown {
+  button {
+    font-size: 14px;
+    font-family: "GothamRoundBook";
+  }
+  > button {
+    width: 100%;
+    background-color: $white;
+    border: none;
+    line-height: 22px;
+    color: $gray-color1;
+    text-align: left;
+    position: relative;
+    svg {
+      width: 9px !important;
+      position: absolute;
+      right: 16px;
+      top: 13px;
+      padding: 0;
+      margin: 0;
+    }
+    &:hover, &.active {
+      background-color: transparent;
+      border: none;
+      color: $gray-color1;
+    }
+    &:focus, &.focus {
+      outline: none;
+      box-shadow: $dropdown-shadow;
+      background-color: transparent;
+      border: none;
+      color: $gray-color1;
+    }
+    &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active {
+      box-shadow: $dropdown-shadow !important;
+      background-color: transparent;
+      color: $gray-color1;
+    }
+  }
+  .show > .btn-secondary.dropdown-toggle {
+    background-color: transparent;
+    color: $gray-color1;
+  }
+  .dropdown-menu {
+    width: 100%;
+    min-width: unset;
+    border: none;
+    border-radius: $normal-radius;
+    box-shadow: $dropdown-shadow;
+    margin: 8px 0 0;
+    .dropdown-item {
+      padding: 8px 16px;
+      color: $gray-color1;
+      &.active, &:active {
+        background-color: rgba($primary-color, 0.30);
+      }
+      &:hover, &.hover {
+        background-color: rgba($primary-color, 0.1);
+      }
+    }
+  }
+}
+
+// select 
+select {
+  background: transparent;
+  -webkit-appearance: none;
+  option {
+    padding: 2px 2px;
+    line-height: 24px;
+    min-height: 24px;
+  }
+  &.form-control {
+    color: $gray-color3;
+    text-transform: capitalize;
+    &:focus, &.focus {
+      color: $gray-color1;
+    }
+  }
+}
+.selection-box {
+  svg {
+    width: 10px !important;
+  }
+  &.date-select {
+    .date-icon {
+      fill: none;
+      width: 16px !important;
+      height: 16px;
+      left: 16px;
+      bottom: 14px;
+      color: $gray-color3;
+    }
+    .form-control {
+      padding-left: 38px;
+    }
+  }
+}
+// datepicker 
+.react-datepicker-wrapper {
+  display: block !important;
+  .react-datepicker__input-container {
+    display: block;
+    input {
+      width: 100%;
+      padding: 8px 16px 8px 38px;
+      border-radius: $normal-radius;
+      border: none;
+      box-shadow: $select-date-shadow;
+       line-height: 25px;
+       &:focus {
+         outline: none;
+       }
+    }
+  }
+}
+.react-datepicker__header {
+  background-color: transparent !important;
+  border-bottom: none !important;
+  padding-top: 0 !important;
+}
+.react-datepicker__current-month, .react-datepicker-time__header, .react-datepicker-year-header {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #C4C4C4;
+}
+.react-datepicker-popper {
+  z-index:  2 !important;
+  .react-datepicker__triangle {
+    display: none;
+  }
+}
+.react-datepicker {
+  border: none !important;
+  box-shadow: $select-date-shadow;
+  padding: 16px;
+}
+.react-datepicker__day, .react-datepicker__month-text, .react-datepicker__quarter-text, .react-datepicker__year-text {
+  border-radius: $button-radius !important;
+}
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range {
+  background-color: $primary-color !important;
+}
+.react-datepicker__day-name {
+  font-family: "GothamRoundMedium";
+  margin-top: 0 !important;
+  line-height: 12px !important;
+  margin-bottom: 0 !important;
+}
+.react-datepicker__day {
+  font-family: "GothamRoundBook";
+  margin: 4px !important;
+  &:focus {
+    outline: none;
+  }
+}
+.react-datepicker__month {
+  margin-bottom: 0 !important;
+  .react-datepicker__week {
+    &:last-child {
+      .react-datepicker__day {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+.react-datepicker__day--outside-month {
+  color: $gray-color3 !important;
+}
+.react-datepicker__navigation {
+  top: 22px !important;
+}
+.react-datepicker__navigation--next {
+  border-style: solid !important;
+	border-width: 2px 2px 0 0 !important;
+	display: inline-block;
+	height: 8px !important;
+  top: 0.15em;
+  right: 20px !important;
+	transform: rotate(45deg);
+	vertical-align: top;
+  width: 8px !important;
+  border-color: unset !important;
+}
+.react-datepicker__navigation--previous {
+  border-style: solid !important;
+	border-width: 2px 2px 0 0 !important;
+	display: inline-block;
+	height: 8px !important;
+  top: 0.15em;
+  left: 20px !important;
+	transform: rotate(-135deg);
+	vertical-align: top;
+  width: 8px !important;
+  border-color: unset !important;
+}
+
+// checkbox & radio
+.checkbox_animated {
+  cursor: pointer;
+  position: relative;
+  margin: 0 1rem 0 0;
+  &:before {
+      transition: transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+      transform: rotate(-45deg) scale(0, 0);
+      content: "";
+      position: absolute;
+      left: 0.25rem;
+      top: 0.225rem;
+      z-index: 1;
+      width: 0.75rem;
+      height: 0.375rem;
+      border: 2px solid $white;
+      border-top-style: none;
+      border-right-style: none;
+  }
+  &:after {
+      content: "";
+      position: absolute;
+      top: -0.125rem;
+      left: 0;
+      width: 1.3rem;
+      height: 1.3rem;
+      background: $white;
+      box-shadow: $checkbox-shadow;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  &.disabled {
+    &:after {
+      background: $gray-color3;
+      box-shadow: none;
+    }
+  }
+  &:focus, &.focus {
+    outline: none;
+    &:before {
+      border: 2px solid $textarea-caption;
+      border-top-style: none;
+      border-right-style: none;
+      transform: rotate(-45deg) scale(1, 1);
+    }
+  }
+  &:checked {
+    &:before {
+      transform: rotate(-45deg) scale(1, 1);
+      border: 2px solid $white;
+      border-top-style: none;
+      border-right-style: none;
+    }
+    &:after {
+      background: $primary-color;
+    }
+    &.disabled {
+      &:before {
+        border: 2px solid $gray-color3;
+      }
+    }
+}
+}
+.radio_animated {
+  position: relative;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+  &:before {
+      transition: transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
+      transform: scale(0, 0);
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0.125rem;
+      z-index: 1;
+      width: 0.75rem;
+      height: 0.75rem;
+      background: $primary-color;
+      border-radius: 50%;
+  }
+  &:after {
+      content: "";
+      position: absolute;
+      top: -0.25rem;
+      left: -0.125rem;
+      width: 1.25rem;
+      height: 1.25rem;
+      background: $white;
+      box-shadow: $checkbox-shadow;
+      border-radius: 50%;
+  }
+  &.disabled, &:disabled {
+    &:before {
+      background: $gray-color3;
+      transform: scale(1, 1);
+    }
+  }
+  &:checked:before {
+      transform: scale(1, 1);
+      background: $primary-color;
+  }
+}
+// badge css
+.badge {
+  box-shadow: $badge-shadow;
+  border-radius: $button-radius;
+  padding: 6px 4px;
+}
+.tooltip-inner {
+  max-width: 280px !important;
+  font-size: 12px;
+  padding: 10px;
+  font-family: "GothamRoundBook";
+  line-height: 20px;
+  background: #FFFFFF;
+  color: $gray-color1;
+  text-align: left;
+  box-shadow: $card-shadow;
+  color: $primary-color;
+}
+.arrow {
+  display: none !important;
+}
+
+
+
+
+// switch css
+.custom-switch {
+  input {
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    outline: none;
+    box-shadow: none;
+    background-color: $primary-color;
+    border-color: none;
+  }
+  .custom-control-label {
+    &::before {
+      width: 45px;
+      height: 24px;
+      border-radius: 50px;
+      background-color: $gray-color3;
+      box-shadow: -3px 3px 6px rgba(225, 230, 236, 0.2), 3px -3px 6px rgba(225, 230, 236, 0.2), -3px -3px 6px rgba(253, 255, 255, 0.9), 3px 3px 8px rgba(225, 230, 236, 0.9), inset 1px 1px 2px rgba(253, 255, 255, 0.3), inset -1px -1px 2px rgba(225, 230, 236, 0.5);
+      border-radius: 100px;
+      border:none;
+    }
+    &::after {
+      width: 20px;
+      height: 20px;
+      background: #F3F3F5;
+      box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+    &:focus, &:hover, &:active, &.active {
+      &::before {
+        background-color: $gray-color3;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+  .custom-control-input {
+    &:checked {
+      ~ .custom-control-label {
+        &::before {
+          border-color: $primary-color;
+          background-color: $primary-color;
+        }
+        &::after {
+          transform: translateX(20px);
+        }
+      }
+    }
+    &:focus:not(:checked) {
+      ~ .custom-control-label::before {
+        border: none;
+      }
+    }
+    &:focus {
+      ~ .custom-control-label::before {
+        box-shadow: none;
+      }
+    }
+  }
+  label {
+    padding-left: 16px;
+    padding-top: 7px;
+    font-size: 12px;
+    font-family: "GothamRoundBook";
+  }
+}
+.switch-box {
+  &.states {
+    .custom-control-label-left {
+      font-size: 12px;
+      padding-top: 7px;
+      font-family: "GothamRoundBook";
+      display: inline-block;
+      vertical-align: middle;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    .custom-switch {
+      padding-left: 0;
+      .custom-control-label {
+        &::before {
+          left: 8px;
+        }
+        &:after {
+          left: 10px;
+        }
+      }
+    }
+    .custom-control-label {
+      padding-left: 60px;
+    }
+  }
+}
+.switch-box {
+  display: flex;
+  .custom-switch {
+    + .custom-switch {
+      margin-left: 64px;
+    }
+  }
+}
+
+
+// responsive css
+@media (max-width: 575px) {
+  .default-form {
+    .form-box {
+      .row {
+        .form-group {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  .textarea-inputs {
+    form {
+      .row {
+        .form-group {
+          margin-top: 0 !important;
+        }
+        > div {
+          + div {
+            margin-top: 32px;
+          }
+        }
+      }
+    }
+  }
+}

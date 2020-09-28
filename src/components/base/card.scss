@@ -1,0 +1,302 @@
+@import "../../assets/scss/variables.scss";
+
+
+.card {
+  .card-body {
+    padding: 24px;
+    h2 {
+      padding-bottom: 32px;
+      margin-bottom: 0;
+    }
+  }
+  &.signin-card {
+    .card-body {
+      h2 {
+        text-align: center;
+      }
+      .d-flex {
+        padding-bottom: 32px;
+      }
+      .text-center {
+        padding-top: 24px;
+        a {
+          font-family: "GothamRoundMedium";
+        }
+      }
+    }
+  }
+}
+
+// provider card
+.provider-card {
+  border: none;
+  .provider-wrap {
+    display: flex;
+    justify-content: space-between;
+    .media {
+      .with-status {
+        position: relative;
+        img {
+          border: 6px solid $white;
+          box-shadow: $provideruser-shadow;
+          border-radius: $button-radius;
+        }
+        .status {
+          right: 0;
+          width: 26px;
+          height: 26px;
+          border-width: 4px;
+        }
+      }
+      .media-body {
+        padding-left: 16px;
+        h3 {
+          padding-bottom: 16px;
+          margin-bottom: 0;
+          color: $default-black;
+          font-weight: 600;
+        }
+        .badge-list {
+          padding: 16px 0;
+          li {
+            .badge-circle {
+              width: 16px;
+              height: 16px;
+              border-radius: $button-radius;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              span {
+                margin-top: 2px;
+                font-size: 8px;
+                color: $white;
+                font-family: "GothamRoundMedium";
+              }
+            }
+            + li {
+              padding-left: 8px;
+            }
+          }
+        }
+        .labels {
+          .tag {
+            padding: 8px 12px;
+            background-color: $tag-bg;
+            border-radius: $normal-radius;
+            box-shadow: $tag-shadow;
+            display: inline-block;
+            + .tag {
+              margin-left: 12px;
+            }
+          }
+        }
+      }
+    }
+    .provider-right {
+      text-align: right;
+      h3 {
+        margin-bottom: 0;
+        .fa-star {
+          vertical-align: top;
+          width: 8px;
+          height: 8px;
+          color: $marigo-color;
+        }
+      }
+      .d-flex {
+        padding-bottom: 16px;
+        justify-content: flex-end;
+        small {
+          text-align: right;
+          margin-left: 12px;
+          font-size: 8px;
+        }
+      }
+      ul {
+        li {
+          + li {
+            margin-left: 8px;
+          }
+        }
+      }
+      .btn-bottom {
+        padding-top: 52px;
+      }
+    }
+    > div {
+      padding: 24px;
+    }
+  }
+  .card-body {
+    padding: 0;
+    border: none;
+  }
+}
+.provider-card-width {
+  display: flex;
+  justify-content: space-around;
+  .provider-card {
+    min-width: 665px;
+  }
+}
+
+// timezone card
+.timezone-card {
+  .media {
+    align-items: center;
+    .zone-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: $button-radius;
+    }
+    .media-body {
+      padding-left: 16px;
+      h4 {
+        margin-bottom: 0;
+      }
+    }
+  }
+  + .timezone-card {
+    margin-top: 32px;
+  }
+}
+
+// profile card
+.profile-card {
+  text-align: center;
+  a {
+    font-family: "GothamRoundBook";
+  }
+  .edit-link {
+    color: $default-black;
+  }
+}
+
+// appoinment card
+.appoinment-card {
+  text-align: center;
+  h5 {
+    font-family: "GothamRoundBook";
+    margin-bottom: 0;
+    margin-top: -2px;
+  }
+  h5, svg {
+    color: $primary-color;
+  }
+  .fa-walking {
+    width: 72px;
+    height: 72px;
+  }
+  .btn {
+    line-height: 1;
+  }
+  .progress {
+    height: 3px;
+    margin-bottom: 8px;
+    border-radius: 50px;
+  }
+}
+
+// status card
+.status-card {
+  text-align: center;
+  transition: all 0.8s ease-in-out;
+  span {
+    display: block;
+    font-family: "GothamRoundMedium";
+    color: $primary-color;
+    transition: all 0.5s ease-in-out;
+  }
+  &.active, &:active {
+    box-shadow: $status-active;
+    transition: all 0.8s ease-in-out;
+  }
+  &.hover, &:hover, &:focus, &.focus {
+    box-shadow: $status-hover;
+    transition: all 0.8s ease-in-out;
+  }
+  &.selected {
+    background-color: $primary-color;
+    transition: all 0.8s ease-in-out;
+    span {
+      color: $white;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  &.disabled {
+    opacity: 0.4;
+    transition: all 0.8s ease-in-out;
+  }
+}
+.status-wrapper {
+  .status-box {
+    > span {
+      display: inline-block;
+      margin-bottom: 4px;
+      line-height: 35px;
+    }
+    span {
+      text-transform: capitalize;
+    }
+  }
+  .row {
+    + .row {
+      margin-top: 48px;
+    }
+  }
+}
+
+// progress bar
+.bg-primary {
+  background-color: $primary-color !important;
+}
+
+// responsive css
+@media (max-width: 1600px) {
+  .provider-card-width {
+    .provider-card {
+      min-width: unset;
+    }
+  }
+}
+@media (max-width: 1440px) {
+  .provider-card-width {
+    display: grid;
+    .provider-card {
+      + .provider-card {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .cards {
+    .login-card {
+      margin-top: 48px;
+    }
+  }
+  .provider-card {
+    .provider-wrap {
+      display: block;
+      .provider-right {
+        text-align: left;
+        .d-flex {
+          justify-content: flex-start;
+        }
+        .btn-bottom {
+          padding-top: 16px;
+        }
+      }
+    }
+  }
+  .other-card {
+    > div {
+      + div {
+        margin-top: 32px;
+      }
+    }
+  }
+}

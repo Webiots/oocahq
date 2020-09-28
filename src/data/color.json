@@ -1,0 +1,82 @@
+[
+	{
+		"colors": "primaryColor",
+		"data": [
+		  {
+		  	"name":"OOCA Turquoise",
+		  	"class":"default-primary2",
+		  	"code":"00C4B3"
+		  },
+		  {
+		  	"name":"OOCA Blue",
+		  	"class":"default-primary",
+		  	"code":"0055BB"
+		  }
+		]
+	},
+	{
+		"colors": "accentColor",
+		"data": [
+		  {
+		  	"name":"OOCA Marigo",
+		  	"class":"default-marigo",
+		  	"code":"E9A400"
+		  }
+		]
+	},
+	{
+		"colors": "sematicColor",
+		"data": [
+		  {
+		  	"name":"OOCA Flamingo",
+		  	"class":"default-flamingo",
+		  	"code":"EF7773"
+		  },
+		  {
+		  	"name":"OOCA Sunshade",
+		  	"class":"default-sunshade",
+		  	"code":"FF8F4B"
+		  },
+		  {
+		  	"name":"OOCA Guava",
+		  	"class":"default-guava",
+		  	"code":"8AD866"
+		  },
+		  {
+		  	"name":"OOCA Bluee",
+		  	"class":"default-bluee",
+		  	"code":"4994EC"
+		  }
+		]
+	},
+	{
+		"colors": "greyColor",
+		"data": [
+		  {
+		  	"name":"Black",
+		  	"class":"default-blackk",
+		  	"code":"2B2B2B"
+		  },
+		  {
+		  	"name":"Gray1",
+		  	"class":"default-gray1",
+		  	"code":"474C55"
+		  },
+		  {
+		  	"name":"Gray2",
+		  	"class":"default-gray2",
+		  	"code":"788597"
+		  },
+		  {
+		  	"name":"Gray3",
+		  	"class":"default-gray3",
+		  	"code":"CBD6E0"
+		  },
+		  {
+		  	"name":"Gray4",
+		  	"class":"default-gray4",
+		  	"code":"DFEAF3"
+		  }
+		]
+	}
+]

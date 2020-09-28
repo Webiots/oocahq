@@ -1,0 +1,301 @@
+@import "../../assets/scss/variables.scss";
+
+.color-shades {
+  .color-wrap {
+    ul {
+      li {
+        .color-box {
+          .square-box {
+            width: 110px;
+            height: 110px;
+            border-radius: $normal-radius;
+            box-shadow: inset 5px 5px 3px -2px rgba($black, 0.3);
+            margin-bottom: 15px;
+          }
+          h6 {
+            margin-bottom: 2px;
+          }
+        }
+        + li {
+          margin-left: calc(16px + (32 - 16) * ((100vw - 320px) / (1920 - 320)));
+        }
+      }
+    }
+    + .color-wrap {
+      padding-top: calc(24px + (40 - 24) * ((100vw - 320px) / (1920 - 320)));
+      margin-top: -7px;
+    }
+  }
+  .with-shades {
+    > div {
+      .label-dark {
+        margin-bottom: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+      }
+    }
+    .shade-list {
+      margin-top: 15px;
+      > div {
+        + div {
+          margin-top: 5px;
+        }
+        span {
+          font-family: "GothamRoundMedium";
+          font-size: 13px;
+          margin-bottom: 2px;
+          display: inline-block;
+        }
+        ul {
+          li {
+            width: 70px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// colors //
+@each $default-name, $default-color in (primary, $primary-color),
+        (primary2, $primary-color2) ,
+        (marigo, $marigo-color),
+        (flamingo, $flamingo-color),
+        (sunshade, $sunshade-color),
+        (guava, $guava-color),
+        (bluee, $blue-color),
+        (blackk, $black),
+        (gray1, $gray-color1),
+        (gray2, $gray-color2),
+        (gray3, $gray-color3),
+        (gray4, $gray-color4) {
+  .default-#{$default-name} {
+    background-color: $default-color;
+  }
+}
+
+// mix with white shades
+.shades-light {
+  .primary-color2 {
+    ul {
+      $colors: $primary-color2, #3ed1c6, #7bdfd8, #b9eceb, #ddf5f7;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+  .primary-color {
+    ul {
+      $colors: $primary-color, #3e7dc9, #7ba7db, #b9d1ed, #dde9f6;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+  .marigo-color {
+    ul {
+      $colors: $marigo-color, #eebb40, #f4d180, #f9e8bf, #fdf6e5;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+  .guava-color {
+    ul {
+      $colors: $guava-color, #a7e28c, #c4eab3, #e2f5d9, #f3fbf0;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+  .sunshade-color {
+    ul {
+      $colors: $sunshade-color, #ffab78, #ffc7a5, #ffe3d2, #fff4ed;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+  .flamingo-color {
+    ul {
+      $colors: $flamingo-color, #f39996, #f7bbb9, #fbdddc, #fdf1f1;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+  .blue-color {
+    ul {
+      $colors: $blue-color, #76aff1, #a4c9f5, #d1e4fa, #edf4fd;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+}
+
+// mix with black shades
+.shades-dark {
+  margin-top: calc(24px + (40 - 24) * ((100vw - 320px) / (1920 - 320)));
+  .primary-color2 {
+    ul {
+      $colors: $primary-color2, #009386, #016259, #00312d, #001412;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+  .primary-color {
+    ul {
+      $colors: $primary-color, #08408c, #032b5d, #00152f, #000913;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+  .marigo-color {
+    ul {
+      $colors: $marigo-color, #af7b00, #745200, #3a2900, #171000;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+  .guava-color {
+    ul {
+      $colors: $guava-color, #67a24c, #456c33, #223619, #0f160a;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+  .sunshade-color {
+    ul {
+      $colors: $sunshade-color, #bf6b37, #804725, #402413, #190e07;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+  .flamingo-color {
+    ul {
+      $colors: $flamingo-color, #b35956, #773b39, #3c1e1d, #180c0b;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+  .blue-color {
+    ul {
+      $colors: $blue-color, #376fb1, #244a76, #12253b, #070f18;
+      @for $i from 1 through length($colors) {
+        li:nth-child(#{length($colors)}n+#{$i}) {
+            background: nth($colors, $i)
+        }
+      }
+    }
+  }
+}
+
+// responsive css
+@media (max-width: 1199px) {
+  .color-shades {
+    .color-wrap {
+      ul {
+        li {
+          .color-box {
+            .square-box {
+              width: 90px;
+              height: 90px;
+            }
+          }
+        }
+      }
+    }
+    .with-shades {
+      .shade-list {
+        > div {
+          ul {
+            li {
+              width: 55px;
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .with-shades {
+    margin-top: 40px;
+  }
+  .shades-dark {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .shades-dark {
+    margin-top: calc(16px + (32 - 16) * ((100vw - 320px) / (1920 - 320)));
+  }
+  .color-shades {
+    .color-wrap {
+      ul {
+        li {
+          .color-box {
+            .square-box {
+              width: 80px;
+              height: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .color-shades {
+    .color-wrap {
+      ul {
+        margin-bottom: -10px;
+        li {
+          .color-box {
+            margin-bottom: 10px;
+            .square-box {
+              width: 70px;
+              height: 70px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+[
+	{
+		"type":"avatar",
+		"data": [
+		  {
+		  	"class":"user-image"
+		  },
+		  {
+		  	"class":"avatar-184"
+		  },
+		  {
+		  	"class":"metric-80"
+		  },
+		  {
+		  	"class":"metric-32"
+		  }
+		]
+	},
+	{
+		"type":"avatarWithStatus",
+		"data": [
+		  {
+		  	"class":"user-image",
+		  	"status":"status available"
+		  },
+		  {
+		  	"class":"user-image",
+		  	"status":"status busy"
+		  },
+		  {
+		  	"class":"user-image",
+		  	"status":"status offline"
+		  },
+		  {
+		  	"class":"user-image",
+		  	"status":"status away"
+		  }
+		]
+	}
+]
